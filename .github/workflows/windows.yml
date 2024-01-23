@@ -10,6 +10,9 @@ permissions:
 env:
   GOPROXY: direct
 
+on:
+  workflow_dispatch:
+
 jobs:
   msys2-ucrt64:
     runs-on: windows-latest
