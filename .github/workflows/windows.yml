@@ -3,15 +3,13 @@ on:
   push:
     tags:
       - '*'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 env:
   GOPROXY: direct
-
-on:
-  workflow_dispatch:
 
 jobs:
   msys2-ucrt64:
